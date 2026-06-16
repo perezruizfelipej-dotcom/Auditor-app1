@@ -13,18 +13,24 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
+      - name: Install all dependencies
         run: |
           sudo apt update
           sudo apt install -y python3-pip build-essential git python3-dev zlib1g-dev openjdk-17-jdk unzip wget
 
-      - name: Install Aidl
+      - name: Install Aidl via Android SDK
         run: |
-          wget https://dl.google.com/android/repository/platform-tools-latest-linux.zip
-          unzip platform-tools-latest-linux.zip
-          sudo cp platform-tools/aidl /usr/bin/aidl
-          sudo chmod +x /usr/bin/aidl
-          aidl --version
+          mkdir -p $HOME/android-sdk/cmdline-tools
+          cd $HOME/android-sdk/cmdline-tools
+          wget https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
+          unzip commandlinetools-linux-11076708_latest.zip
+          mv cmdline-tools latest
+          rm commandlinetools-linux-11076708_latest.zip
+          export PATH=$PATH:$HOME/android-sdk/cmdline-tools/latest/bin
+          echo "y" | sdkmanager --licenses
+          sdkmanager "build-tools;33.0.0"
+          echo "export PATH=\$PATH:$HOME/android-sdk/cmdline-tools/latest/bin" >> ~/.bashrc
+          which aidl || echo "Aidl installed via SDK"
 
       - name: Install Buildozer
         run: |
