@@ -1,5 +1,8 @@
 name: Build APK
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -11,26 +14,43 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
-      - name: Install all dependencies
+      - name: Install system dependencies
         run: |
           sudo apt update
-          sudo apt install -y python3-pip build-essential git python3-dev zlib1g-dev openjdk-17-jdk unzip wget
+          sudo apt install -y \
+            git zip unzip openjdk-17-jdk \
+            python3-pip python3-dev build-essential \
+            zlib1g-dev libffi-dev libssl-dev
 
-      - name: Install Aidl via Android SDK
+      - name: Install Android SDK
         run: |
-          mkdir -p $HOME/android-sdk/cmdline-tools
-          cd $HOME/android-sdk/cmdline-tools
-          wget https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
-          unzip commandlinetools-linux-11076708_latest.zip
+          export ANDROID_SDK_ROOT=$HOME/android-sdk
+          echo "ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT" >> $GITHUB_ENV
+
+          mkdir -p $ANDROID_SDK_ROOT/cmdline-tools
+          cd $ANDROID_SDK_ROOT/cmdline-tools
+
+          wget -q https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
+          unzip -q commandlinetools-linux-11076708_latest.zip
           mv cmdline-tools latest
-          rm commandlinetools-linux-11076708_latest.zip
-          export PATH=$PATH:$HOME/android-sdk/cmdline-tools/latest/bin
-          echo "y" | sdkmanager --licenses
-          sdkmanager "build-tools;33.0.0"
-          echo "export PATH=\$PATH:$HOME/android-sdk/cmdline-tools/latest/bin" >> ~/.bashrc
-          which aidl || echo "Aidl installed via SDK"
+
+          echo "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin" >> $GITHUB_PATH
+
+          yes | sdkmanager --licenses
+
+          sdkmanager \
+            "platform-tools" \
+            "platforms;android-33" \
+            "build-tools;33.0.2" \
+            "ndk;25.2.9519653"
+
+          echo "$ANDROID_SDK_ROOT/build-tools/33.0.2" >> $GITHUB_PATH
+
+      - name: Verify AIDL (safe check)
+        run: |
+          ls $ANDROID_SDK_ROOT/build-tools/33.0.2/aidl
 
       - name: Install Buildozer
         run: |
@@ -39,6 +59,9 @@ jobs:
 
       - name: Build APK
         run: |
+          export ANDROID_SDK_ROOT=$HOME/android-sdk
+          export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+
           buildozer android debug
 
       - name: Upload APK
@@ -46,3 +69,4 @@ jobs:
         with:
           name: auditor-app
           path: bin/*.apk
+      
