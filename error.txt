@@ -1,0 +1,1240 @@
+# Ensure build layout
+# Check configuration tokens
+# Preparing build
+# Check requirements for android
+# Install platform
+# Run 'git config --get remote.origin.url' ...
+# Cwd /data/data/com.termux/files/home/auditor-app/.buildozer/android/platform/python-for-android
+https://github.com/kivy/python-for-android.git
+# Run 'git branch -vv' ...
+# Cwd /data/data/com.termux/files/home/auditor-app/.buildozer/android/platform/python-for-android
+* master 58d21141 [origin/master] Merge pull request #3321 from kivy/release-2026.05.09
+# Run '/data/data/com.termux/files/usr/bin/python3.13 -m pip install -q --user appdirs colorama>=0.3.3 jinja2 sh>=2, <3.0; sys_platform!="win32" meson ninja build toml packaging setuptools wheel~=0.43.0' ...
+# Cwd None
+  error: subprocess-exited-with-error
+  
+  × Building wheel for ninja (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [1166 lines of output]
+      /data/data/com.termux/files/usr/tmp/pip-build-env-0zztisra/normal/lib/python3.13/site-packages/vcs_versioning/_backends/_git.py:474: UserWarning: git archive did not support describe output
+        return archival_to_version(data, config=config)
+      /data/data/com.termux/files/usr/tmp/pip-build-env-0zztisra/normal/lib/python3.13/site-packages/vcs_versioning/_backends/_git.py:474: UserWarning: unprocessed git archival found (no export subst applied)
+        return archival_to_version(data, config=config)
+      *** scikit-build-core 0.12.2 using CMake 4.3.3 (wheel)
+      *** Configuring CMake...
+      loading initial cache file build/py3-none-android_30_arm64_v8a/CMakeInit.txt
+      -- The C compiler identification is Clang 21.1.8
+      -- The CXX compiler identification is Clang 21.1.8
+      -- Detecting C compiler ABI info
+      -- Detecting C compiler ABI info - done
+      -- Check for working C compiler: /data/data/com.termux/files/usr/bin/clang - skipped
+      -- Detecting C compile features
+      -- Detecting C compile features - done
+      -- Detecting CXX compiler ABI info
+      -- Detecting CXX compiler ABI info - done
+      -- Check for working CXX compiler: /data/data/com.termux/files/usr/bin/clang++ - skipped
+      -- Detecting CXX compile features
+      -- Detecting CXX compile features - done
+      -- ************************************
+      -- Ninja Python Distribution
+      --
+      --   RUN_NINJA_TEST : OFF
+      -- ************************************
+      -- IPO / LTO enabled
+      -- Performing Test flag_no_deprecated
+      -- Performing Test flag_no_deprecated - Success
+      -- Looking for ppoll
+      -- Looking for ppoll - found
+      CMake Warning at ninja-upstream/CMakeLists.txt:82 (message):
+        re2c 2 or later was not found; changes to src/*.in.cc will not affect your
+        build.
+      
+      
+      -- Looking for fork
+      -- Looking for fork - found
+      -- Looking for pipe
+      -- Looking for pipe - found
+      -- Could NOT find GTest (missing: GTEST_LIBRARY GTEST_INCLUDE_DIR GTEST_MAIN_LIBRARY)
+      CMake Deprecation Warning at build/py3-none-android_30_arm64_v8a/_deps/googletest-src/CMakeLists.txt:4 (cmake_minimum_required):
+        Compatibility with CMake < 3.10 will be removed from a future version of
+        CMake.
+      
+        Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+        to tell CMake that the project requires at least <min> but has been updated
+        to work with policies introduced by <max> or earlier.
+      
+      
+      CMake Deprecation Warning at build/py3-none-android_30_arm64_v8a/_deps/googletest-src/googlemock/CMakeLists.txt:39 (cmake_minimum_required):
+        Compatibility with CMake < 3.10 will be removed from a future version of
+        CMake.
+      
+        Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+        to tell CMake that the project requires at least <min> but has been updated
+        to work with policies introduced by <max> or earlier.
+      
+      
+      CMake Deprecation Warning at build/py3-none-android_30_arm64_v8a/_deps/googletest-src/googletest/CMakeLists.txt:49 (cmake_minimum_required):
+        Compatibility with CMake < 3.10 will be removed from a future version of
+        CMake.
+      
+        Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+        to tell CMake that the project requires at least <min> but has been updated
+        to work with policies introduced by <max> or earlier.
+      
+      
+      -- Found Python: /data/data/com.termux/files/usr/bin/python3.13 (found version "3.13.13") found components: Interpreter
+      -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+      -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+      -- Looking for pthread_create in pthreads
+      -- Looking for pthread_create in pthreads - not found
+      -- Looking for pthread_create in pthread
+      -- Looking for pthread_create in pthread - found
+      -- Found Threads: TRUE
+      -- Configuring done (25.9s)
+      -- Generating done (0.7s)
+      -- Build files have been written to: /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/build/py3-none-android_30_arm64_v8a
+      *** Building project with Ninja...
+      [1/81] Building CXX object ninja-upstream/CMakeFiles/libninja.dir/src/clparser.cc.o
+      FAILED: [code=1] ninja-upstream/CMakeFiles/libninja.dir/src/clparser.cc.o
+      /data/data/com.termux/files/usr/bin/clang++ -DUSE_PPOLL=1  -std=c++11 -O3 -DNDEBUG -flto=thin -fcolor-diagnostics -Wno-deprecated -MD -MT ninja-upstream/CMakeFiles/libninja.dir/src/clparser.cc.o -MF ninja-upstream/CMakeFiles/libninja.dir/src/clparser.cc.o.d -o ninja-upstream/CMakeFiles/libninja.dir/src/clparser.cc.o -c /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clparser.cc
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clparser.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clparser.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/set:519:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/lexicographical_compare.h:30:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:115:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwctype:56:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cctype:45:5: error: <cctype> tried including <ctype.h> but didn't find libc++'s <ctype.h> header.           This usually means that your header search paths are not configured properly.            The header search paths should contain the C++ Standard Library headers before           any C Standard Library.
+         45 | #   error <cctype> tried including <ctype.h> but didn't find libc++'s <ctype.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clparser.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clparser.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/set:519:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/lexicographical_compare.h:30:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:115:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwctype:61:5: error: <cwctype> tried including <wctype.h> but didn't find libc++'s <wctype.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         61 | #   error <cwctype> tried including <wctype.h> but didn't find libc++'s <wctype.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clparser.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clparser.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/set:519:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/lexicographical_compare.h:30:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:120:5: error: <cwchar> tried including <wchar.h> but didn't find libc++'s <wchar.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        120 | #   error <cwchar> tried including <wchar.h> but didn't find libc++'s <wchar.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clparser.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clparser.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/set:531:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:275:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/compare:171:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:334:5: error: <cmath> tried including <math.h> but didn't find libc++'s <math.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        334 | #   error <cmath> tried including <math.h> but didn't find libc++'s <math.h> header. \
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:571:10: error: no member named '__builtin_isinf' in namespace 'std'; did you mean simply '__builtin_isinf'?
+        571 |   return std::isinf(__lcpp_x);
+            |          ^    ~~~~~~~~~~~~~~~
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__math/traits.h:91:10: note: '__builtin_isinf' declared here
+         91 |   return __builtin_isinf(__x);
+            |          ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clparser.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clparser.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/set:531:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1433:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/exception:84:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__exception/exception_ptr.h:18:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdlib:93:5: error: <cstdlib> tried including <stdlib.h> but didn't find libc++'s <stdlib.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         93 | #   error <cstdlib> tried including <stdlib.h> but didn't find libc++'s <stdlib.h> header. \
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdlib:134:9: error: target of using declaration conflicts with declaration already in scope
+        134 | using ::abs _LIBCPP_USING_IF_EXISTS;
+            |         ^
+      /data/data/com.termux/files/usr/include/stdlib.h:237:5: note: target of using declaration
+        237 | int abs(int __x) __attribute_const__;
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:367:1: note: conflicting declaration
+        367 | using ::abs _LIBCPP_USING_IF_EXISTS;
+            | ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clparser.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clparser.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/set:531:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1434:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iosfwd:120:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__std_mbstate_t.h:14:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__mbstate_t.h:51:4: error: "We don't know how to get the definition of mbstate_t without <wchar.h> on your platform."
+         51 | #  error "We don't know how to get the definition of mbstate_t without <wchar.h> on your platform."
+            |    ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clparser.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clparser.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/set:532:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__node_handle:65:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/optional:190:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/hash.h:25:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstring:69:5: error: <cstring> tried including <string.h> but didn't find libc++'s <string.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         69 | #   error <cstring> tried including <string.h> but didn't find libc++'s <string.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clparser.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clparser.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/set:532:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__node_handle:65:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/optional:1300:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iterator:693:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__iterator/istreambuf_iterator.h:19:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__string/char_traits.h:29:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdio:107:5: error: <cstdio> tried including <stdio.h> but didn't find libc++'s <stdio.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        107 | #   error <cstdio> tried including <stdio.h> but didn't find libc++'s <stdio.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clparser.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clparser.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/set:1523:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/functional:600:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/vector:356:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cerrno:33:5: error: <cerrno> tried including <errno.h> but didn't find libc++'s <errno.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         33 | #   error <cerrno> tried including <errno.h> but didn't find libc++'s <errno.h> header. \
+            |     ^
+      11 errors generated.
+      [2/81] Building CXX object ninja-upstream/CMakeFiles/libninja-re2c.dir/src/depfile_parser.cc.o
+      FAILED: [code=1] ninja-upstream/CMakeFiles/libninja-re2c.dir/src/depfile_parser.cc.o
+      /data/data/com.termux/files/usr/bin/clang++ -DUSE_PPOLL=1 -I/data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src -std=c++11 -O3 -DNDEBUG -flto=thin -fcolor-diagnostics -Wno-deprecated -MD -MT ninja-upstream/CMakeFiles/libninja-re2c.dir/src/depfile_parser.cc.o -MF ninja-upstream/CMakeFiles/libninja-re2c.dir/src/depfile_parser.cc.o.d -o ninja-upstream/CMakeFiles/libninja-re2c.dir/src/depfile_parser.cc.o -c /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/depfile_parser.cc
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/depfile_parser.cc:16:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/depfile_parser.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:594:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/remove.h:12:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/find.h:32:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:115:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwctype:56:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cctype:45:5: error: <cctype> tried including <ctype.h> but didn't find libc++'s <ctype.h> header.           This usually means that your header search paths are not configured properly.            The header search paths should contain the C++ Standard Library headers before           any C Standard Library.
+         45 | #   error <cctype> tried including <ctype.h> but didn't find libc++'s <ctype.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/depfile_parser.cc:16:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/depfile_parser.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:594:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/remove.h:12:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/find.h:32:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:115:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwctype:61:5: error: <cwctype> tried including <wctype.h> but didn't find libc++'s <wctype.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         61 | #   error <cwctype> tried including <wctype.h> but didn't find libc++'s <wctype.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/depfile_parser.cc:16:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/depfile_parser.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:594:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/remove.h:12:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/find.h:32:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:120:5: error: <cwchar> tried including <wchar.h> but didn't find libc++'s <wchar.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        120 | #   error <cwchar> tried including <wchar.h> but didn't find libc++'s <wchar.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/depfile_parser.cc:16:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/depfile_parser.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:600:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/hash.h:25:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstring:69:5: error: <cstring> tried including <string.h> but didn't find libc++'s <string.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         69 | #   error <cstring> tried including <string.h> but didn't find libc++'s <string.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/depfile_parser.cc:16:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/depfile_parser.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:618:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:275:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/compare:171:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:334:5: error: <cmath> tried including <math.h> but didn't find libc++'s <math.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        334 | #   error <cmath> tried including <math.h> but didn't find libc++'s <math.h> header. \
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:571:10: error: no member named '__builtin_isinf' in namespace 'std'; did you mean simply '__builtin_isinf'?
+        571 |   return std::isinf(__lcpp_x);
+            |          ^    ~~~~~~~~~~~~~~~
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__math/traits.h:91:10: note: '__builtin_isinf' declared here
+         91 |   return __builtin_isinf(__x);
+            |          ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/depfile_parser.cc:16:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/depfile_parser.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:618:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1433:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/exception:84:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__exception/exception_ptr.h:18:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdlib:93:5: error: <cstdlib> tried including <stdlib.h> but didn't find libc++'s <stdlib.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         93 | #   error <cstdlib> tried including <stdlib.h> but didn't find libc++'s <stdlib.h> header. \
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdlib:134:9: error: target of using declaration conflicts with declaration already in scope
+        134 | using ::abs _LIBCPP_USING_IF_EXISTS;
+            |         ^
+      /data/data/com.termux/files/usr/include/stdlib.h:237:5: note: target of using declaration
+        237 | int abs(int __x) __attribute_const__;
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:367:1: note: conflicting declaration
+        367 | using ::abs _LIBCPP_USING_IF_EXISTS;
+            | ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/depfile_parser.cc:16:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/depfile_parser.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:618:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1434:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iosfwd:120:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__std_mbstate_t.h:14:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__mbstate_t.h:51:4: error: "We don't know how to get the definition of mbstate_t without <wchar.h> on your platform."
+         51 | #  error "We don't know how to get the definition of mbstate_t without <wchar.h> on your platform."
+            |    ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/depfile_parser.cc:16:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/depfile_parser.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:624:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__string/char_traits.h:29:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdio:107:5: error: <cstdio> tried including <stdio.h> but didn't find libc++'s <stdio.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        107 | #   error <cstdio> tried including <stdio.h> but didn't find libc++'s <stdio.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/depfile_parser.cc:16:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/depfile_parser.h:19:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/vector:356:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cerrno:33:5: error: <cerrno> tried including <errno.h> but didn't find libc++'s <errno.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         33 | #   error <cerrno> tried including <errno.h> but didn't find libc++'s <errno.h> header. \
+            |     ^
+      11 errors generated.
+      [3/81] Building CXX object ninja-upstream/CMakeFiles/libninja-re2c.dir/src/lexer.cc.o
+      FAILED: [code=1] ninja-upstream/CMakeFiles/libninja-re2c.dir/src/lexer.cc.o
+      /data/data/com.termux/files/usr/bin/clang++ -DUSE_PPOLL=1 -I/data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src -std=c++11 -O3 -DNDEBUG -flto=thin -fcolor-diagnostics -Wno-deprecated -MD -MT ninja-upstream/CMakeFiles/libninja-re2c.dir/src/lexer.cc.o -MF ninja-upstream/CMakeFiles/libninja-re2c.dir/src/lexer.cc.o.d -o ninja-upstream/CMakeFiles/libninja-re2c.dir/src/lexer.cc.o -c /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/lexer.cc
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/lexer.cc:16:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/lexer.h:18:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/string_piece.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:594:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/remove.h:12:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/find.h:32:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:115:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwctype:56:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cctype:45:5: error: <cctype> tried including <ctype.h> but didn't find libc++'s <ctype.h> header.           This usually means that your header search paths are not configured properly.            The header search paths should contain the C++ Standard Library headers before           any C Standard Library.
+         45 | #   error <cctype> tried including <ctype.h> but didn't find libc++'s <ctype.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/lexer.cc:16:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/lexer.h:18:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/string_piece.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:594:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/remove.h:12:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/find.h:32:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:115:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwctype:61:5: error: <cwctype> tried including <wctype.h> but didn't find libc++'s <wctype.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         61 | #   error <cwctype> tried including <wctype.h> but didn't find libc++'s <wctype.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/lexer.cc:16:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/lexer.h:18:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/string_piece.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:594:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/remove.h:12:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/find.h:32:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:120:5: error: <cwchar> tried including <wchar.h> but didn't find libc++'s <wchar.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        120 | #   error <cwchar> tried including <wchar.h> but didn't find libc++'s <wchar.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/lexer.cc:16:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/lexer.h:18:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/string_piece.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:600:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/hash.h:25:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstring:69:5: error: <cstring> tried including <string.h> but didn't find libc++'s <string.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         69 | #   error <cstring> tried including <string.h> but didn't find libc++'s <string.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/lexer.cc:16:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/lexer.h:18:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/string_piece.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:618:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:275:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/compare:171:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:334:5: error: <cmath> tried including <math.h> but didn't find libc++'s <math.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        334 | #   error <cmath> tried including <math.h> but didn't find libc++'s <math.h> header. \
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:571:10: error: no member named '__builtin_isinf' in namespace 'std'; did you mean simply '__builtin_isinf'?
+        571 |   return std::isinf(__lcpp_x);
+            |          ^    ~~~~~~~~~~~~~~~
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__math/traits.h:91:10: note: '__builtin_isinf' declared here
+         91 |   return __builtin_isinf(__x);
+            |          ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/lexer.cc:16:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/lexer.h:18:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/string_piece.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:618:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1433:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/exception:84:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__exception/exception_ptr.h:18:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdlib:93:5: error: <cstdlib> tried including <stdlib.h> but didn't find libc++'s <stdlib.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         93 | #   error <cstdlib> tried including <stdlib.h> but didn't find libc++'s <stdlib.h> header. \
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdlib:134:9: error: target of using declaration conflicts with declaration already in scope
+        134 | using ::abs _LIBCPP_USING_IF_EXISTS;
+            |         ^
+      /data/data/com.termux/files/usr/include/stdlib.h:237:5: note: target of using declaration
+        237 | int abs(int __x) __attribute_const__;
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:367:1: note: conflicting declaration
+        367 | using ::abs _LIBCPP_USING_IF_EXISTS;
+            | ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/lexer.cc:16:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/lexer.h:18:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/string_piece.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:618:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1434:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iosfwd:120:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__std_mbstate_t.h:14:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__mbstate_t.h:51:4: error: "We don't know how to get the definition of mbstate_t without <wchar.h> on your platform."
+         51 | #  error "We don't know how to get the definition of mbstate_t without <wchar.h> on your platform."
+            |    ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/lexer.cc:16:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/lexer.h:18:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/string_piece.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:624:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__string/char_traits.h:29:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdio:107:5: error: <cstdio> tried including <stdio.h> but didn't find libc++'s <stdio.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        107 | #   error <cstdio> tried including <stdio.h> but didn't find libc++'s <stdio.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/lexer.cc:20:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/eval_env.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:2202:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/functional:600:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/vector:356:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cerrno:33:5: error: <cerrno> tried including <errno.h> but didn't find libc++'s <errno.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         33 | #   error <cerrno> tried including <errno.h> but didn't find libc++'s <errno.h> header. \
+            |     ^
+      11 errors generated.
+      [4/81] Building CXX object ninja-upstream/CMakeFiles/libninja.dir/src/debug_flags.cc.o
+      FAILED: [code=1] ninja-upstream/CMakeFiles/libninja.dir/src/debug_flags.cc.o
+      /data/data/com.termux/files/usr/bin/clang++ -DUSE_PPOLL=1  -std=c++11 -O3 -DNDEBUG -flto=thin -fcolor-diagnostics -Wno-deprecated -MD -MT ninja-upstream/CMakeFiles/libninja.dir/src/debug_flags.cc.o -MF ninja-upstream/CMakeFiles/libninja.dir/src/debug_flags.cc.o.d -o ninja-upstream/CMakeFiles/libninja.dir/src/debug_flags.cc.o -c /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/debug_flags.cc
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/debug_flags.cc:16:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:578:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/lexicographical_compare.h:30:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:115:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwctype:56:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cctype:45:5: error: <cctype> tried including <ctype.h> but didn't find libc++'s <ctype.h> header.           This usually means that your header search paths are not configured properly.            The header search paths should contain the C++ Standard Library headers before           any C Standard Library.
+         45 | #   error <cctype> tried including <ctype.h> but didn't find libc++'s <ctype.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/debug_flags.cc:16:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:578:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/lexicographical_compare.h:30:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:115:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwctype:61:5: error: <cwctype> tried including <wctype.h> but didn't find libc++'s <wctype.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         61 | #   error <cwctype> tried including <wctype.h> but didn't find libc++'s <wctype.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/debug_flags.cc:16:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:578:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/lexicographical_compare.h:30:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:120:5: error: <cwchar> tried including <wchar.h> but didn't find libc++'s <wchar.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        120 | #   error <cwchar> tried including <wchar.h> but didn't find libc++'s <wchar.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/debug_flags.cc:16:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:593:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/unique_ptr.h:20:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/hash.h:25:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstring:69:5: error: <cstring> tried including <string.h> but didn't find libc++'s <string.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         69 | #   error <cstring> tried including <string.h> but didn't find libc++'s <string.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/debug_flags.cc:16:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:594:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:275:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/compare:171:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:334:5: error: <cmath> tried including <math.h> but didn't find libc++'s <math.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        334 | #   error <cmath> tried including <math.h> but didn't find libc++'s <math.h> header. \
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:571:10: error: no member named '__builtin_isinf' in namespace 'std'; did you mean simply '__builtin_isinf'?
+        571 |   return std::isinf(__lcpp_x);
+            |          ^    ~~~~~~~~~~~~~~~
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__math/traits.h:91:10: note: '__builtin_isinf' declared here
+         91 |   return __builtin_isinf(__x);
+            |          ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/debug_flags.cc:16:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:594:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1433:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/exception:84:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__exception/exception_ptr.h:18:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdlib:93:5: error: <cstdlib> tried including <stdlib.h> but didn't find libc++'s <stdlib.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         93 | #   error <cstdlib> tried including <stdlib.h> but didn't find libc++'s <stdlib.h> header. \
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdlib:134:9: error: target of using declaration conflicts with declaration already in scope
+        134 | using ::abs _LIBCPP_USING_IF_EXISTS;
+            |         ^
+      /data/data/com.termux/files/usr/include/stdlib.h:237:5: note: target of using declaration
+        237 | int abs(int __x) __attribute_const__;
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:367:1: note: conflicting declaration
+        367 | using ::abs _LIBCPP_USING_IF_EXISTS;
+            | ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/debug_flags.cc:16:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:594:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1434:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iosfwd:120:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__std_mbstate_t.h:14:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__mbstate_t.h:51:4: error: "We don't know how to get the definition of mbstate_t without <wchar.h> on your platform."
+         51 | #  error "We don't know how to get the definition of mbstate_t without <wchar.h> on your platform."
+            |    ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/debug_flags.cc:16:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:596:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__node_handle:65:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/optional:1300:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iterator:693:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__iterator/istreambuf_iterator.h:19:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__string/char_traits.h:29:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdio:107:5: error: <cstdio> tried including <stdio.h> but didn't find libc++'s <stdio.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        107 | #   error <cstdio> tried including <stdio.h> but didn't find libc++'s <stdio.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/debug_flags.cc:16:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:2202:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/functional:600:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/vector:356:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cerrno:33:5: error: <cerrno> tried including <errno.h> but didn't find libc++'s <errno.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         33 | #   error <cerrno> tried including <errno.h> but didn't find libc++'s <errno.h> header. \
+            |     ^
+      11 errors generated.
+      [5/81] Building CXX object ninja-upstream/CMakeFiles/libninja.dir/src/build_log.cc.o
+      FAILED: [code=1] ninja-upstream/CMakeFiles/libninja.dir/src/build_log.cc.o
+      /data/data/com.termux/files/usr/bin/clang++ -DUSE_PPOLL=1  -std=c++11 -O3 -DNDEBUG -flto=thin -fcolor-diagnostics -Wno-deprecated -MD -MT ninja-upstream/CMakeFiles/libninja.dir/src/build_log.cc.o -MF ninja-upstream/CMakeFiles/libninja.dir/src/build_log.cc.o.d -o ninja-upstream/CMakeFiles/libninja.dir/src/build_log.cc.o -c /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.cc
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.cc:23:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.h:20:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/memory:947:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/inout_ptr.h:16:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/shared_ptr.h:33:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/shared_count.h:13:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/typeinfo:391:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdlib:93:5: error: <cstdlib> tried including <stdlib.h> but didn't find libc++'s <stdlib.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         93 | #   error <cstdlib> tried including <stdlib.h> but didn't find libc++'s <stdlib.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.cc:23:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.h:20:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/memory:947:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/inout_ptr.h:16:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/shared_ptr.h:35:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/unique_ptr.h:20:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/hash.h:25:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstring:69:5: error: <cstring> tried including <string.h> but didn't find libc++'s <string.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         69 | #   error <cstring> tried including <string.h> but didn't find libc++'s <string.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.cc:23:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.h:20:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/memory:947:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/inout_ptr.h:24:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:275:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/compare:171:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:334:5: error: <cmath> tried including <math.h> but didn't find libc++'s <math.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        334 | #   error <cmath> tried including <math.h> but didn't find libc++'s <math.h> header. \
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:571:10: error: no member named '__builtin_isinf' in namespace 'std'; did you mean simply '__builtin_isinf'?
+        571 |   return std::isinf(__lcpp_x);
+            |          ^    ~~~~~~~~~~~~~~~
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__math/traits.h:91:10: note: '__builtin_isinf' declared here
+         91 |   return __builtin_isinf(__x);
+            |          ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.cc:23:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.h:20:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/memory:947:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/inout_ptr.h:24:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1434:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iosfwd:120:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__std_mbstate_t.h:14:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__mbstate_t.h:51:4: error: "We don't know how to get the definition of mbstate_t without <wchar.h> on your platform."
+         51 | #  error "We don't know how to get the definition of mbstate_t without <wchar.h> on your platform."
+            |    ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.cc:23:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.h:20:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/memory:947:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/inout_ptr.h:24:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1434:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iosfwd:136:14: error: reference to unresolved using declaration
+        136 | typedef fpos<mbstate_t> streampos;
+            |              ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__std_mbstate_t.h:25:1: note: using declaration annotated with 'using_if_exists' here
+         25 | using ::mbstate_t _LIBCPP_USING_IF_EXISTS;
+            | ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.cc:23:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.h:20:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/memory:947:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/inout_ptr.h:24:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1434:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iosfwd:136:14: error: reference to unresolved using declaration
+        136 | typedef fpos<mbstate_t> streampos;
+            |              ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__std_mbstate_t.h:25:1: note: using declaration annotated with 'using_if_exists' here
+         25 | using ::mbstate_t _LIBCPP_USING_IF_EXISTS;
+            | ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.cc:23:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.h:20:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/memory:947:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/inout_ptr.h:24:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1434:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iosfwd:138:14: error: reference to unresolved using declaration
+        138 | typedef fpos<mbstate_t> wstreampos;
+            |              ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__std_mbstate_t.h:25:1: note: using declaration annotated with 'using_if_exists' here
+         25 | using ::mbstate_t _LIBCPP_USING_IF_EXISTS;
+            | ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.cc:23:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.h:20:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/memory:947:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/inout_ptr.h:24:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1434:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iosfwd:138:14: error: reference to unresolved using declaration
+        138 | typedef fpos<mbstate_t> wstreampos;
+            |              ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__std_mbstate_t.h:25:1: note: using declaration annotated with 'using_if_exists' here
+         25 | using ::mbstate_t _LIBCPP_USING_IF_EXISTS;
+            | ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.cc:23:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.h:20:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/memory:947:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/inout_ptr.h:24:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1434:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iosfwd:143:14: error: reference to unresolved using declaration
+        143 | typedef fpos<mbstate_t> u16streampos;
+            |              ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__std_mbstate_t.h:25:1: note: using declaration annotated with 'using_if_exists' here
+         25 | using ::mbstate_t _LIBCPP_USING_IF_EXISTS;
+            | ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.cc:23:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.h:20:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/memory:947:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/inout_ptr.h:24:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1434:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iosfwd:143:14: error: reference to unresolved using declaration
+        143 | typedef fpos<mbstate_t> u16streampos;
+            |              ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__std_mbstate_t.h:25:1: note: using declaration annotated with 'using_if_exists' here
+         25 | using ::mbstate_t _LIBCPP_USING_IF_EXISTS;
+            | ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.cc:23:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.h:20:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/memory:947:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/inout_ptr.h:24:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1434:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iosfwd:144:14: error: reference to unresolved using declaration
+        144 | typedef fpos<mbstate_t> u32streampos;
+            |              ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__std_mbstate_t.h:25:1: note: using declaration annotated with 'using_if_exists' here
+         25 | using ::mbstate_t _LIBCPP_USING_IF_EXISTS;
+            | ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.cc:23:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.h:20:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/memory:947:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/inout_ptr.h:24:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1434:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iosfwd:144:14: error: reference to unresolved using declaration
+        144 | typedef fpos<mbstate_t> u32streampos;
+            |              ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__std_mbstate_t.h:25:1: note: using declaration annotated with 'using_if_exists' here
+         25 | using ::mbstate_t _LIBCPP_USING_IF_EXISTS;
+            | ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.cc:23:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.h:20:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/memory:992:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iterator:693:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__iterator/istreambuf_iterator.h:19:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__string/char_traits.h:13:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/find.h:32:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:115:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwctype:56:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cctype:45:5: error: <cctype> tried including <ctype.h> but didn't find libc++'s <ctype.h> header.           This usually means that your header search paths are not configured properly.            The header search paths should contain the C++ Standard Library headers before           any C Standard Library.
+         45 | #   error <cctype> tried including <ctype.h> but didn't find libc++'s <ctype.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.cc:23:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.h:20:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/memory:992:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iterator:693:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__iterator/istreambuf_iterator.h:19:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__string/char_traits.h:13:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/find.h:32:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:115:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwctype:61:5: error: <cwctype> tried including <wctype.h> but didn't find libc++'s <wctype.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         61 | #   error <cwctype> tried including <wctype.h> but didn't find libc++'s <wctype.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.cc:23:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.h:20:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/memory:992:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iterator:693:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__iterator/istreambuf_iterator.h:19:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__string/char_traits.h:13:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/find.h:32:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:120:5: error: <cwchar> tried including <wchar.h> but didn't find libc++'s <wchar.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        120 | #   error <cwchar> tried including <wchar.h> but didn't find libc++'s <wchar.h> header. \
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:133:9: error: target of using declaration conflicts with declaration already in scope
+        133 | using ::mbstate_t _LIBCPP_USING_IF_EXISTS;
+            |         ^
+      /data/data/com.termux/files/usr/include/bits/mbstate_t.h:47:3: note: target of using declaration
+         47 | } mbstate_t;
+            |   ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__std_mbstate_t.h:25:1: note: conflicting declaration
+         25 | using ::mbstate_t _LIBCPP_USING_IF_EXISTS;
+            | ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.cc:23:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.h:20:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/memory:992:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iterator:693:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__iterator/istreambuf_iterator.h:19:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__string/char_traits.h:29:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdio:107:5: error: <cstdio> tried including <stdio.h> but didn't find libc++'s <stdio.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        107 | #   error <cstdio> tried including <stdio.h> but didn't find libc++'s <stdio.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.cc:23:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build_log.h:20:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/memory:992:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iterator:693:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__iterator/istreambuf_iterator.h:19:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__string/char_traits.h:86:22: error: reference to unresolved using declaration
+         86 |   using state_type = mbstate_t;
+            |                      ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__std_mbstate_t.h:25:1: note: using declaration annotated with 'using_if_exists' here
+         25 | using ::mbstate_t _LIBCPP_USING_IF_EXISTS;
+            | ^
+      fatal error: too many errors emitted, stopping now [-ferror-limit=]
+      20 errors generated.
+      [6/81] Building CXX object ninja-upstream/CMakeFiles/libninja.dir/src/dyndep.cc.o
+      FAILED: [code=1] ninja-upstream/CMakeFiles/libninja.dir/src/dyndep.cc.o
+      /data/data/com.termux/files/usr/bin/clang++ -DUSE_PPOLL=1  -std=c++11 -O3 -DNDEBUG -flto=thin -fcolor-diagnostics -Wno-deprecated -MD -MT ninja-upstream/CMakeFiles/libninja.dir/src/dyndep.cc.o -MF ninja-upstream/CMakeFiles/libninja.dir/src/dyndep.cc.o.d -o ninja-upstream/CMakeFiles/libninja.dir/src/dyndep.cc.o -c /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep.cc
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:578:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/lexicographical_compare.h:30:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:115:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwctype:56:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cctype:45:5: error: <cctype> tried including <ctype.h> but didn't find libc++'s <ctype.h> header.           This usually means that your header search paths are not configured properly.            The header search paths should contain the C++ Standard Library headers before           any C Standard Library.
+         45 | #   error <cctype> tried including <ctype.h> but didn't find libc++'s <ctype.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:578:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/lexicographical_compare.h:30:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:115:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwctype:61:5: error: <cwctype> tried including <wctype.h> but didn't find libc++'s <wctype.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         61 | #   error <cwctype> tried including <wctype.h> but didn't find libc++'s <wctype.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:578:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/lexicographical_compare.h:30:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:120:5: error: <cwchar> tried including <wchar.h> but didn't find libc++'s <wchar.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        120 | #   error <cwchar> tried including <wchar.h> but didn't find libc++'s <wchar.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:593:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/unique_ptr.h:20:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/hash.h:25:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstring:69:5: error: <cstring> tried including <string.h> but didn't find libc++'s <string.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         69 | #   error <cstring> tried including <string.h> but didn't find libc++'s <string.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:594:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:275:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/compare:171:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:334:5: error: <cmath> tried including <math.h> but didn't find libc++'s <math.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        334 | #   error <cmath> tried including <math.h> but didn't find libc++'s <math.h> header. \
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:571:10: error: no member named '__builtin_isinf' in namespace 'std'; did you mean simply '__builtin_isinf'?
+        571 |   return std::isinf(__lcpp_x);
+            |          ^    ~~~~~~~~~~~~~~~
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__math/traits.h:91:10: note: '__builtin_isinf' declared here
+         91 |   return __builtin_isinf(__x);
+            |          ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:594:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1433:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/exception:84:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__exception/exception_ptr.h:18:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdlib:93:5: error: <cstdlib> tried including <stdlib.h> but didn't find libc++'s <stdlib.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         93 | #   error <cstdlib> tried including <stdlib.h> but didn't find libc++'s <stdlib.h> header. \
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdlib:134:9: error: target of using declaration conflicts with declaration already in scope
+        134 | using ::abs _LIBCPP_USING_IF_EXISTS;
+            |         ^
+      /data/data/com.termux/files/usr/include/stdlib.h:237:5: note: target of using declaration
+        237 | int abs(int __x) __attribute_const__;
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:367:1: note: conflicting declaration
+        367 | using ::abs _LIBCPP_USING_IF_EXISTS;
+            | ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:594:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1434:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iosfwd:120:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__std_mbstate_t.h:14:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__mbstate_t.h:51:4: error: "We don't know how to get the definition of mbstate_t without <wchar.h> on your platform."
+         51 | #  error "We don't know how to get the definition of mbstate_t without <wchar.h> on your platform."
+            |    ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:596:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__node_handle:65:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/optional:1300:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iterator:693:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__iterator/istreambuf_iterator.h:19:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__string/char_traits.h:29:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdio:107:5: error: <cstdio> tried including <stdio.h> but didn't find libc++'s <stdio.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        107 | #   error <cstdio> tried including <stdio.h> but didn't find libc++'s <stdio.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:2202:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/functional:600:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/vector:356:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cerrno:33:5: error: <cerrno> tried including <errno.h> but didn't find libc++'s <errno.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         33 | #   error <cerrno> tried including <errno.h> but didn't find libc++'s <errno.h> header. \
+            |     ^
+      11 errors generated.
+      [7/81] Building CXX object ninja-upstream/CMakeFiles/libninja.dir/src/dyndep_parser.cc.o
+      FAILED: [code=1] ninja-upstream/CMakeFiles/libninja.dir/src/dyndep_parser.cc.o
+      /data/data/com.termux/files/usr/bin/clang++ -DUSE_PPOLL=1  -std=c++11 -O3 -DNDEBUG -flto=thin -fcolor-diagnostics -Wno-deprecated -MD -MT ninja-upstream/CMakeFiles/libninja.dir/src/dyndep_parser.cc.o -MF ninja-upstream/CMakeFiles/libninja.dir/src/dyndep_parser.cc.o.d -o ninja-upstream/CMakeFiles/libninja.dir/src/dyndep_parser.cc.o -c /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep_parser.cc
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep_parser.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep_parser.h:18:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/eval_env.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:578:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/lexicographical_compare.h:30:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:115:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwctype:56:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cctype:45:5: error: <cctype> tried including <ctype.h> but didn't find libc++'s <ctype.h> header.           This usually means that your header search paths are not configured properly.            The header search paths should contain the C++ Standard Library headers before           any C Standard Library.
+         45 | #   error <cctype> tried including <ctype.h> but didn't find libc++'s <ctype.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep_parser.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep_parser.h:18:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/eval_env.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:578:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/lexicographical_compare.h:30:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:115:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwctype:61:5: error: <cwctype> tried including <wctype.h> but didn't find libc++'s <wctype.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         61 | #   error <cwctype> tried including <wctype.h> but didn't find libc++'s <wctype.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep_parser.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep_parser.h:18:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/eval_env.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:578:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/lexicographical_compare.h:30:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:120:5: error: <cwchar> tried including <wchar.h> but didn't find libc++'s <wchar.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        120 | #   error <cwchar> tried including <wchar.h> but didn't find libc++'s <wchar.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep_parser.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep_parser.h:18:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/eval_env.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:593:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/unique_ptr.h:20:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/hash.h:25:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstring:69:5: error: <cstring> tried including <string.h> but didn't find libc++'s <string.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         69 | #   error <cstring> tried including <string.h> but didn't find libc++'s <string.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep_parser.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep_parser.h:18:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/eval_env.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:594:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:275:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/compare:171:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:334:5: error: <cmath> tried including <math.h> but didn't find libc++'s <math.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        334 | #   error <cmath> tried including <math.h> but didn't find libc++'s <math.h> header. \
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:571:10: error: no member named '__builtin_isinf' in namespace 'std'; did you mean simply '__builtin_isinf'?
+        571 |   return std::isinf(__lcpp_x);
+            |          ^    ~~~~~~~~~~~~~~~
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__math/traits.h:91:10: note: '__builtin_isinf' declared here
+         91 |   return __builtin_isinf(__x);
+            |          ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep_parser.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep_parser.h:18:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/eval_env.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:594:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1433:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/exception:84:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__exception/exception_ptr.h:18:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdlib:93:5: error: <cstdlib> tried including <stdlib.h> but didn't find libc++'s <stdlib.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         93 | #   error <cstdlib> tried including <stdlib.h> but didn't find libc++'s <stdlib.h> header. \
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdlib:134:9: error: target of using declaration conflicts with declaration already in scope
+        134 | using ::abs _LIBCPP_USING_IF_EXISTS;
+            |         ^
+      /data/data/com.termux/files/usr/include/stdlib.h:237:5: note: target of using declaration
+        237 | int abs(int __x) __attribute_const__;
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:367:1: note: conflicting declaration
+        367 | using ::abs _LIBCPP_USING_IF_EXISTS;
+            | ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep_parser.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep_parser.h:18:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/eval_env.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:594:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1434:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iosfwd:120:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__std_mbstate_t.h:14:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__mbstate_t.h:51:4: error: "We don't know how to get the definition of mbstate_t without <wchar.h> on your platform."
+         51 | #  error "We don't know how to get the definition of mbstate_t without <wchar.h> on your platform."
+            |    ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep_parser.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep_parser.h:18:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/eval_env.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:596:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__node_handle:65:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/optional:1300:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iterator:693:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__iterator/istreambuf_iterator.h:19:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__string/char_traits.h:29:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdio:107:5: error: <cstdio> tried including <stdio.h> but didn't find libc++'s <stdio.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        107 | #   error <cstdio> tried including <stdio.h> but didn't find libc++'s <stdio.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep_parser.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/dyndep_parser.h:18:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/eval_env.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:2202:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/functional:600:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/vector:356:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cerrno:33:5: error: <cerrno> tried including <errno.h> but didn't find libc++'s <errno.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         33 | #   error <cerrno> tried including <errno.h> but didn't find libc++'s <errno.h> header. \
+            |     ^
+      11 errors generated.
+      [8/81] Building CXX object ninja-upstream/CMakeFiles/libninja.dir/src/clean.cc.o
+      FAILED: [code=1] ninja-upstream/CMakeFiles/libninja.dir/src/clean.cc.o
+      /data/data/com.termux/files/usr/bin/clang++ -DUSE_PPOLL=1  -std=c++11 -O3 -DNDEBUG -flto=thin -fcolor-diagnostics -Wno-deprecated -MD -MT ninja-upstream/CMakeFiles/libninja.dir/src/clean.cc.o -MF ninja-upstream/CMakeFiles/libninja.dir/src/clean.cc.o.d -o ninja-upstream/CMakeFiles/libninja.dir/src/clean.cc.o -c /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clean.cc
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clean.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clean.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/set:519:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/lexicographical_compare.h:30:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:115:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwctype:56:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cctype:45:5: error: <cctype> tried including <ctype.h> but didn't find libc++'s <ctype.h> header.           This usually means that your header search paths are not configured properly.            The header search paths should contain the C++ Standard Library headers before           any C Standard Library.
+         45 | #   error <cctype> tried including <ctype.h> but didn't find libc++'s <ctype.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clean.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clean.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/set:519:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/lexicographical_compare.h:30:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:115:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwctype:61:5: error: <cwctype> tried including <wctype.h> but didn't find libc++'s <wctype.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         61 | #   error <cwctype> tried including <wctype.h> but didn't find libc++'s <wctype.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clean.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clean.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/set:519:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/lexicographical_compare.h:30:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:120:5: error: <cwchar> tried including <wchar.h> but didn't find libc++'s <wchar.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        120 | #   error <cwchar> tried including <wchar.h> but didn't find libc++'s <wchar.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clean.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clean.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/set:531:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:275:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/compare:171:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:334:5: error: <cmath> tried including <math.h> but didn't find libc++'s <math.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        334 | #   error <cmath> tried including <math.h> but didn't find libc++'s <math.h> header. \
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:571:10: error: no member named '__builtin_isinf' in namespace 'std'; did you mean simply '__builtin_isinf'?
+        571 |   return std::isinf(__lcpp_x);
+            |          ^    ~~~~~~~~~~~~~~~
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__math/traits.h:91:10: note: '__builtin_isinf' declared here
+         91 |   return __builtin_isinf(__x);
+            |          ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clean.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clean.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/set:531:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1433:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/exception:84:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__exception/exception_ptr.h:18:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdlib:93:5: error: <cstdlib> tried including <stdlib.h> but didn't find libc++'s <stdlib.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         93 | #   error <cstdlib> tried including <stdlib.h> but didn't find libc++'s <stdlib.h> header. \
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdlib:134:9: error: target of using declaration conflicts with declaration already in scope
+        134 | using ::abs _LIBCPP_USING_IF_EXISTS;
+            |         ^
+      /data/data/com.termux/files/usr/include/stdlib.h:237:5: note: target of using declaration
+        237 | int abs(int __x) __attribute_const__;
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:367:1: note: conflicting declaration
+        367 | using ::abs _LIBCPP_USING_IF_EXISTS;
+            | ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clean.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clean.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/set:531:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1434:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iosfwd:120:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__std_mbstate_t.h:14:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__mbstate_t.h:51:4: error: "We don't know how to get the definition of mbstate_t without <wchar.h> on your platform."
+         51 | #  error "We don't know how to get the definition of mbstate_t without <wchar.h> on your platform."
+            |    ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clean.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clean.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/set:532:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__node_handle:65:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/optional:190:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/hash.h:25:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstring:69:5: error: <cstring> tried including <string.h> but didn't find libc++'s <string.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         69 | #   error <cstring> tried including <string.h> but didn't find libc++'s <string.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clean.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clean.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/set:532:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__node_handle:65:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/optional:1300:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iterator:693:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__iterator/istreambuf_iterator.h:19:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__string/char_traits.h:29:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdio:107:5: error: <cstdio> tried including <stdio.h> but didn't find libc++'s <stdio.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        107 | #   error <cstdio> tried including <stdio.h> but didn't find libc++'s <stdio.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clean.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/clean.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/set:1523:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/functional:600:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/vector:356:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cerrno:33:5: error: <cerrno> tried including <errno.h> but didn't find libc++'s <errno.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         33 | #   error <cerrno> tried including <errno.h> but didn't find libc++'s <errno.h> header. \
+            |     ^
+      11 errors generated.
+      [9/81] Building CXX object ninja-upstream/CMakeFiles/libninja.dir/src/deps_log.cc.o
+      FAILED: [code=1] ninja-upstream/CMakeFiles/libninja.dir/src/deps_log.cc.o
+      /data/data/com.termux/files/usr/bin/clang++ -DUSE_PPOLL=1  -std=c++11 -O3 -DNDEBUG -flto=thin -fcolor-diagnostics -Wno-deprecated -MD -MT ninja-upstream/CMakeFiles/libninja.dir/src/deps_log.cc.o -MF ninja-upstream/CMakeFiles/libninja.dir/src/deps_log.cc.o.d -o ninja-upstream/CMakeFiles/libninja.dir/src/deps_log.cc.o -c /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/deps_log.cc
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/deps_log.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/deps_log.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:594:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/remove.h:12:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/find.h:32:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:115:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwctype:56:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cctype:45:5: error: <cctype> tried including <ctype.h> but didn't find libc++'s <ctype.h> header.           This usually means that your header search paths are not configured properly.            The header search paths should contain the C++ Standard Library headers before           any C Standard Library.
+         45 | #   error <cctype> tried including <ctype.h> but didn't find libc++'s <ctype.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/deps_log.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/deps_log.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:594:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/remove.h:12:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/find.h:32:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:115:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwctype:61:5: error: <cwctype> tried including <wctype.h> but didn't find libc++'s <wctype.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         61 | #   error <cwctype> tried including <wctype.h> but didn't find libc++'s <wctype.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/deps_log.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/deps_log.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:594:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/remove.h:12:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/find.h:32:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:120:5: error: <cwchar> tried including <wchar.h> but didn't find libc++'s <wchar.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        120 | #   error <cwchar> tried including <wchar.h> but didn't find libc++'s <wchar.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/deps_log.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/deps_log.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:600:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/hash.h:25:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstring:69:5: error: <cstring> tried including <string.h> but didn't find libc++'s <string.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         69 | #   error <cstring> tried including <string.h> but didn't find libc++'s <string.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/deps_log.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/deps_log.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:618:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:275:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/compare:171:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:334:5: error: <cmath> tried including <math.h> but didn't find libc++'s <math.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        334 | #   error <cmath> tried including <math.h> but didn't find libc++'s <math.h> header. \
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:571:10: error: no member named '__builtin_isinf' in namespace 'std'; did you mean simply '__builtin_isinf'?
+        571 |   return std::isinf(__lcpp_x);
+            |          ^    ~~~~~~~~~~~~~~~
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__math/traits.h:91:10: note: '__builtin_isinf' declared here
+         91 |   return __builtin_isinf(__x);
+            |          ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/deps_log.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/deps_log.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:618:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1433:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/exception:84:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__exception/exception_ptr.h:18:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdlib:93:5: error: <cstdlib> tried including <stdlib.h> but didn't find libc++'s <stdlib.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         93 | #   error <cstdlib> tried including <stdlib.h> but didn't find libc++'s <stdlib.h> header. \
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdlib:134:9: error: target of using declaration conflicts with declaration already in scope
+        134 | using ::abs _LIBCPP_USING_IF_EXISTS;
+            |         ^
+      /data/data/com.termux/files/usr/include/stdlib.h:237:5: note: target of using declaration
+        237 | int abs(int __x) __attribute_const__;
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:367:1: note: conflicting declaration
+        367 | using ::abs _LIBCPP_USING_IF_EXISTS;
+            | ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/deps_log.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/deps_log.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:618:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1434:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iosfwd:120:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__std_mbstate_t.h:14:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__mbstate_t.h:51:4: error: "We don't know how to get the definition of mbstate_t without <wchar.h> on your platform."
+         51 | #  error "We don't know how to get the definition of mbstate_t without <wchar.h> on your platform."
+            |    ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/deps_log.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/deps_log.h:18:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/string:624:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__string/char_traits.h:29:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdio:107:5: error: <cstdio> tried including <stdio.h> but didn't find libc++'s <stdio.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        107 | #   error <cstdio> tried including <stdio.h> but didn't find libc++'s <stdio.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/deps_log.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/deps_log.h:19:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/vector:356:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cerrno:33:5: error: <cerrno> tried including <errno.h> but didn't find libc++'s <errno.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         33 | #   error <cerrno> tried including <errno.h> but didn't find libc++'s <errno.h> header. \
+            |     ^
+      11 errors generated.
+      [10/81] Building CXX object ninja-upstream/CMakeFiles/libninja.dir/src/build.cc.o
+      FAILED: [code=1] ninja-upstream/CMakeFiles/libninja.dir/src/build.cc.o
+      /data/data/com.termux/files/usr/bin/clang++ -DUSE_PPOLL=1  -std=c++11 -O3 -DNDEBUG -flto=thin -fcolor-diagnostics -Wno-deprecated -MD -MT ninja-upstream/CMakeFiles/libninja.dir/src/build.cc.o -MF ninja-upstream/CMakeFiles/libninja.dir/src/build.cc.o.d -o ninja-upstream/CMakeFiles/libninja.dir/src/build.cc.o -c /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build.cc
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build.h:18:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdio:107:5: error: <cstdio> tried including <stdio.h> but didn't find libc++'s <stdio.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        107 | #   error <cstdio> tried including <stdio.h> but didn't find libc++'s <stdio.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build.h:19:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:578:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/lexicographical_compare.h:30:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:115:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwctype:56:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cctype:45:5: error: <cctype> tried including <ctype.h> but didn't find libc++'s <ctype.h> header.           This usually means that your header search paths are not configured properly.            The header search paths should contain the C++ Standard Library headers before           any C Standard Library.
+         45 | #   error <cctype> tried including <ctype.h> but didn't find libc++'s <ctype.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build.h:19:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:578:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/lexicographical_compare.h:30:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:115:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwctype:61:5: error: <cwctype> tried including <wctype.h> but didn't find libc++'s <wctype.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         61 | #   error <cwctype> tried including <wctype.h> but didn't find libc++'s <wctype.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build.h:19:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:578:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__algorithm/lexicographical_compare.h:30:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cwchar:120:5: error: <cwchar> tried including <wchar.h> but didn't find libc++'s <wchar.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        120 | #   error <cwchar> tried including <wchar.h> but didn't find libc++'s <wchar.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build.h:19:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:593:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/unique_ptr.h:20:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/hash.h:25:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstring:69:5: error: <cstring> tried including <string.h> but didn't find libc++'s <string.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         69 | #   error <cstring> tried including <string.h> but didn't find libc++'s <string.h> header. \
+            |     ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build.h:19:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:594:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:275:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/compare:171:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:334:5: error: <cmath> tried including <math.h> but didn't find libc++'s <math.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+        334 | #   error <cmath> tried including <math.h> but didn't find libc++'s <math.h> header. \
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:571:10: error: no member named '__builtin_isinf' in namespace 'std'; did you mean simply '__builtin_isinf'?
+        571 |   return std::isinf(__lcpp_x);
+            |          ^    ~~~~~~~~~~~~~~~
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__math/traits.h:91:10: note: '__builtin_isinf' declared here
+         91 |   return __builtin_isinf(__x);
+            |          ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build.h:19:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:594:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1433:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/exception:84:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__exception/exception_ptr.h:18:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdlib:93:5: error: <cstdlib> tried including <stdlib.h> but didn't find libc++'s <stdlib.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         93 | #   error <cstdlib> tried including <stdlib.h> but didn't find libc++'s <stdlib.h> header. \
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdlib:134:9: error: target of using declaration conflicts with declaration already in scope
+        134 | using ::abs _LIBCPP_USING_IF_EXISTS;
+            |         ^
+      /data/data/com.termux/files/usr/include/stdlib.h:237:5: note: target of using declaration
+        237 | int abs(int __x) __attribute_const__;
+            |     ^
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cmath:367:1: note: conflicting declaration
+        367 | using ::abs _LIBCPP_USING_IF_EXISTS;
+            | ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build.h:19:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:594:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory_resource/polymorphic_allocator.h:22:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/tuple:1434:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/iosfwd:120:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__std_mbstate_t.h:14:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__mbstate_t.h:51:4: error: "We don't know how to get the definition of mbstate_t without <wchar.h> on your platform."
+         51 | #  error "We don't know how to get the definition of mbstate_t without <wchar.h> on your platform."
+            |    ^
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build.cc:15:
+      In file included from /data/data/com.termux/files/usr/tmp/pip-install-vkmkj15f/ninja_3c2a034a871744f4851a04beb41f3a20/ninja-upstream/src/build.h:19:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/map:2202:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/functional:600:
+      In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/vector:356:
+      /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cerrno:33:5: error: <cerrno> tried including <errno.h> but didn't find libc++'s <errno.h> header.           This usually means that your header search paths are not configured properly.           The header search paths should contain the C++ Standard Library headers before           any C Standard Library, and you are probably using compiler flags that make that           not be the case.
+         33 | #   error <cerrno> tried including <errno.h> but didn't find libc++'s <errno.h> header. \
+            |     ^
+      11 errors generated.
+      ninja: build stopped: subcommand failed.
+      
+      *** CMake build failed
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for ninja
+error: failed-wheel-build-for-install
+
+× Failed to build installable wheels for some pyproject.toml based projects
+╰─> ninja
+# Command failed: ('/data/data/com.termux/files/usr/bin/python3.13', '-m', 'pip', 'install', '-q', '--user', 'appdirs', 'colorama>=0.3.3', 'jinja2', 'sh>=2, <3.0; sys_platform!="win32"', 'meson', 'ninja', 'build', 'toml', 'packaging', 'setuptools', 'wheel~=0.43.0')
+# Error code: 1
+# ENVIRONMENT:
+#     SHELL = '/data/data/com.termux/files/usr/bin/bash'
+#     COLORTERM = 'truecolor'
+#     HISTCONTROL = 'ignoreboth'
+#     PREFIX = '/data/data/com.termux/files/usr'
+#     JAVA_HOME = '/data/data/com.termux/files/usr/lib/jvm/java-21-openjdk/'
+#     PWD = '/data/data/com.termux/files/home/auditor-app'
+#     CXX = 'clang++'
+#     CXXFLAGS = '-std=c++11'
+#     TERMUX_VERSION = 'googleplay.2026.02.11'
+#     SYSTEMSERVERCLASSPATH = '/system/framework/com.android.location.provider.jar:/system/framework/services.jar:/system/framework/oplus-services.jar:/system/framework/oplus-service-jobscheduler.jar:/apex/com.android.adservices/javalib/service-adservices.jar:/apex/com.android.adservices/javalib/service-sdksandbox.jar:/apex/com.android.appsearch/javalib/service-appsearch.jar:/apex/com.android.art/javalib/service-art.jar:/apex/com.android.compos/javalib/service-compos.jar:/apex/com.android.configinfrastructure/javalib/service-configinfrastructure.jar:/apex/com.android.healthfitness/javalib/service-healthfitness.jar:/apex/com.android.media/javalib/service-media-s.jar:/apex/com.android.ondevicepersonalization/javalib/service-ondevicepersonalization.jar:/apex/com.android.permission/javalib/service-permission.jar:/apex/com.android.rkpd/javalib/service-rkp.jar'
+#     EXTERNAL_STORAGE = '/sdcard'
+#     LD_PRELOAD = '/data/data/com.termux/files/usr/lib/libtermux-exec.so'
+#     LDFLAGS = '-L/data/data/com.termux/files/usr/lib'
+#     HOME = '/data/data/com.termux/files/home'
+#     LANG = 'en_US.UTF-8'
+#     DEX2OATBOOTCLASSPATH = '/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/oplus-framework.jar:/system/framework/oplus-support-wrapper.jar:/system/framework/com.android.fmradio.jar:/system/framework/subsystem-framework.jar:/system_ext/framework/mediatek-common.jar:/system_ext/framework/mediatek-framework.jar:/system_ext/framework/mediatek-ims-common.jar:/system_ext/framework/mediatek-ims-base.jar:/apex/com.android.i18n/javalib/core-icu4j.jar'
+#     TMPDIR = '/data/data/com.termux/files/usr/tmp'
+#     CPPFLAGS = '-I/data/data/com.termux/files/usr/include'
+#     ANDROID_DATA = '/data'
+#     ANDROID_STORAGE = '/storage'
+#     TERM = 'xterm-256color'
+#     CPLUS_INCLUDE_PATH = '/data/data/com.termux/files/usr/include'
+#     LIBRARY_PATH = '/data/data/com.termux/files/usr/lib'
+#     ASEC_MOUNTPOINT = '/mnt/asec'
+#     TERMUX_EXEC__PROC_SELF_EXE = '/data/data/com.termux/files/usr/bin/buildozer'
+#     ANDROID_I18N_ROOT = '/apex/com.android.i18n'
+#     SHLVL = '1'
+#     ANDROID_ROOT = '/system'
+#     BOOTCLASSPATH = '/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/oplus-framework.jar:/system/framework/oplus-support-wrapper.jar:/system/framework/com.android.fmradio.jar:/system/framework/subsystem-framework.jar:/system_ext/framework/mediatek-common.jar:/system_ext/framework/mediatek-framework.jar:/system_ext/framework/mediatek-ims-common.jar:/system_ext/framework/mediatek-ims-base.jar:/apex/com.android.i18n/javalib/core-icu4j.jar:/apex/com.android.adservices/javalib/framework-adservices.jar:/apex/com.android.adservices/javalib/framework-sdksandbox.jar:/apex/com.android.appsearch/javalib/framework-appsearch.jar:/apex/com.android.configinfrastructure/javalib/framework-configinfrastructure.jar:/apex/com.android.conscrypt/javalib/conscrypt.jar:/apex/com.android.devicelock/javalib/framework-devicelock.jar:/apex/com.android.healthfitness/javalib/framework-healthfitness.jar:/apex/com.android.ipsec/javalib/android.net.ipsec.ike.jar:/apex/com.android.media/javalib/updatable-media.jar:/apex/com.android.mediaprovider/javalib/framework-mediaprovider.jar:/apex/com.android.mediaprovider/javalib/framework-pdf.jar:/apex/com.android.mediaprovider/javalib/framework-photopicker.jar:/apex/com.android.ondevicepersonalization/javalib/framework-ondevicepersonalization.jar:/apex/com.android.os.statsd/javalib/framework-statsd.jar:/apex/com.android.permission/javalib/framework-permission.jar:/apex/com.android.permission/javalib/framework-permission-s.jar:/apex/com.android.scheduling/javalib/framework-scheduling.jar:/apex/com.android.sdkext/javalib/framework-sdkextensions.jar:/apex/com.android.tethering/javalib/framework-connectivity.jar:/apex/com.android.tethering/javalib/framework-connectivity-t.jar:/apex/com.android.tethering/javalib/framework-tethering.jar:/apex/com.android.uwb/javalib/framework-uwb.jar:/apex/com.android.virt/javalib/framework-virtualization.jar:/apex/com.android.wifi/javalib/framework-wifi.jar'
+#     ANDROID_TZDATA_ROOT = '/apex/com.android.tzdata'
+#     TMP = '/data/data/com.termux/files/usr/tmp'
+#     PATH = '/data/data/com.termux/files/usr/bin:/product/bin:/apex/com.android.runtime/bin:/apex/com.android.art/bin:/system_ext/bin:/system/bin:/system/xbin:/odm/bin:/vendor/bin:/vendor/xbin'
+#     CC = 'clang'
+#     CFLAGS = '-I/data/data/com.termux/files/usr/include'
+#     C_INCLUDE_PATH = '/data/data/com.termux/files/usr/include'
+#     ANDROID_ART_ROOT = '/apex/com.android.art'
+#     ANDROID_ASSETS = '/system/app'
+#     OLDPWD = '/data/data/com.termux/files/home/auditor-app'
+#     _ = '/data/data/com.termux/files/usr/bin/buildozer'
+# 
+# Buildozer failed to execute the last command
+# The error might be hidden in the log above this error
+# Please read the full log, and search for it before
+# raising an issue with buildozer itself.
+# In case of a bug report, please add a full log with log_level = 2
