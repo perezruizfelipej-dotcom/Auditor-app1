@@ -13,19 +13,18 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install system dependencies
+      - name: Install dependencies
         run: |
           sudo apt update
-          sudo apt install -y \
-            python3-pip \
-            build-essential \
-            git \
-            python3-dev \
-            zlib1g-dev \
-            openjdk-17-jdk \
-            aidl \
-            unzip \
-            wget
+          sudo apt install -y python3-pip build-essential git python3-dev zlib1g-dev openjdk-17-jdk unzip wget
+
+      - name: Install Aidl
+        run: |
+          wget https://dl.google.com/android/repository/platform-tools-latest-linux.zip
+          unzip platform-tools-latest-linux.zip
+          sudo cp platform-tools/aidl /usr/bin/aidl
+          sudo chmod +x /usr/bin/aidl
+          aidl --version
 
       - name: Install Buildozer
         run: |
